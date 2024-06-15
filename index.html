@@ -1,36 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="./styles.css" />
+    <title>My portfolio website</title>
+    <link href="./styling.css" rel="stylesheet">
+    <link href="./mediaquery.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <h1 class="centerAlign"><span style="color: rgb(98, 110, 244);">Calculator</span> on the go !</h1>
-    <div class="container">
-        <div class="row">
-            <input class="input" type="text">
+    <nav id="fsc_nav"> <!-- full screen nav-->
+        <div class="logo">Riya Sharma</div>
+        <div>
+            <ul class="nav_links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#achieve">Achievements</a></li>
+                <li><a href="#project">Best Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
         </div>
-            <button class="but two">AC</button>
-            <button class="but design">%</button>
-            <button class="but design">/</button>
-            <button class="but">7</button>
-            <button class="but">8</button>
-            <button class="but">9</button>
-            <button class="but design">*</button>
-            <button class="but">4</button>
-            <button class="but">5</button>
-            <button class="but">6</button>
-            <button class="but design">-</button>
-            <button class="but">1</button>
-            <button class="but">2</button>
-            <button class="but">3</button>
-            <button class="but design">+</button>
-            <button class="but two">0</button>
-            <button class="but design">.</button>
-            <button class="but design">=</button>
-    </div>
+    </nav>
+    <nav id="ham_nav">
+        <div class="logo">Riya Sharma</div>
+        <div class="ham_menu">
+            <div class="ham_icon" onclick="menu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="ham_links">
+                <li><a href="#about" onclick="menu()">About</a></li>
+                <li><a href="#achieve" onclick="menu()">Achievements</a></li>
+                <li><a href="#project" onclick="menu()">Best Projects</a></li>
+                <li><a href="#contact" onclick="menu()">Contact Me</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="profile_backdrop">
+            <div class="profile_pic">
+                <img src="./images/profilee.jpg" alt="profile pic">
+            </div>
+            <div class="profile_text">
+                <p class="p1">Hello! I am</p>
+                <h1>Riya Sharma</h1>
+                <p class="p2">Web Developer </p>
+                <div class="btn_container">
+                    <button class="btn c1" onclick="window.open('./assets/resume.pdf')">Download CV</button>
+                    <button class="btn c2" onclick="location.href='./#contact'">Contact Info</button>
+                </div>
+                <div class="social_container">
+                    <img src="./images/linkedin.png" alt="linkedin link" class="icon"
+                        onclick="location.href='https://www.linkedin.com/in/riya-sharma-123b03261/'">
+                    <img src='./images/github.png' alt="github link" class="icon"
+                        onclick="location.href='https://github.com/Ruiii08'">
+                    <img src='./images/leetcode-removebg-preview.png' alt="leetcode link" class="icon"
+                        onclick="location.href='https://leetcode.com/u/riyasharmaa282/'">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <h1 class="sec_Head"><img class="section_icons" src="./images/AboutMe-removebg-preview.png"
+                alt="A girl coding in a laptop"><span>More Info <span style="color: #a5c2ac;">About Me</span></span>
+        </h1>
+        <div class="sec_container">
+            <div class="about_pic">
+                <img src="./images/image.png" alt="my picture">
+            </div>
+            <div class="about-det-containers">
+                <div class="abt-container">
+                    <div class="educa">
+                        <img src="./images/education.png" alt="education">
+                        <h3>Education</h3>
+                        <p>3rd year student<br> B.Tech in Computer Science</p>
+                    </div>
+                </div>
+                <div class="abt_text">
+                    <p><span style="color: rgb(102, 102, 102);">Hello, I am a Computer Science whiz with a knack for web development. My enthusiasm for coding is
+                        matched by my love for arts and athleticism.</span></p>
+                    <p><span style="color: rgb(63, 63, 63);">As an avid painter and dancer, I bring creativity and rhythm to problem-solving. My zeal for
+                        outdoor sports keeps me perseverant, ready to tackle challenges both on and off the field.</span></p>
+                    <p><span style="color: rgb(19, 19, 19);">I would love to contribute my diverse skill set to innovative projects and internships that value
+                        multidisciplinary talents.</span></p>
+                </div>
+            </div>
+        </div>
+        <img class="icon arrow" src="./images/arrow.png" alt="arrows to next section"
+            onclick="location.href='./#achieve'">
+    </section>
+    <section id="achieve">
+        <h1 class="sec_Head"><img class="section_icons" src="./images/achieve-removebg-preview.png"
+                alt="A scholar hat"><span>Achievements & <span style="color: #a5c2ac;">Tech Stack</span></span></h1>
+        <div class="ach-details">
+            <div class="abt-container">
+                <div class="det-container one">
+                    <h2 class="ach_h2">Internships & Certificates</h2>
+                    <div class="article_contain ">
+                        <article>
+                            <img src="./images/checkmark.png" alt="check mark" class="art_img">
+                            <div>
+                                <h3>Google Cybersecurity Professional Certificate</h3>
+                                <p>Course on finding and mitigating vulnerabilities</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/checkmark.png" alt="check mark" class="art_img">
+                            <div>
+                                <h3>The Complete Web Development</h3>
+                                <p>Course to learn front end and back end development</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/checkmark.png" alt="check mark" class="art_img">
+                            <div>
+                                <h3>CodSoft Internship</h3>
+                                <p>Internship in Web-development domain</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/checkmark.png" alt="check mark" class="art_img">
+                            <div>
+                                <h3>Bits Reasearch Internship</h3>
+                                <p>Reasearch Internship in AI-ML domain</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="det-container">
+                    <h2 class="ach_h2">Tech-Stack</h2>
+                    <div class="article_contain">
+                        <article>
+                            <img src="./images/checkmark.png" alt="check mark" class="art_img">
+                            <div>
+                                <h3>HTML + CSS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/checkmark.png" alt="check mark" class="art_img">
+                            <div>
+                                <h3>SQL + DBMS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/checkmark.png" alt="check mark" class="art_img">
+                            <div>
+
+                                <h3> React JS</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/checkmark.png" alt="check mark" class="art_img">
+                            <div>
+                                <h3> JavaScript</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/checkmark.png" alt="check mark" class="art_img">
+                            <div>
+                                <h3>OOP</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/checkmark.png" alt="check mark" class="art_img">
+                            <div>
+                                <h3>JAVA</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/checkmark.png" alt="check mark" class="art_img">
+                            <div>
+                                <h3>C/C++</h3>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./images/checkmark.png" alt="check mark" class="art_img">
+                            <div>
+                                <h3>Data Structures</h3>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="icon arrow" src="./images/arrow.png" alt="arrows to next section"
+            onclick="location.href='./#project'">
+    </section>
+    <section id="project">
+        <h1 class="sec_Head"><img class="section_icons" src="./images/bestOf-removebg-preview.png"
+                alt="A podium"><span>Best of <span style="color: #a5c2ac;">Projects</span></span></h1>
+        <div class="ach-details">
+            <div class="abt-container">
+                <div class="det-container pro_1">
+                    <div class="article_contain">
+                        <img src="./images/project1.png" alt="Simon says game site" class="projectImg">
+                    </div>
+                    <h2 class="ach_h2 project_h2">Project One</h2>
+                    <p>A game of simon says.</p>
+                    <div>
+                        <button class="btn c2" onclick="location.href='https://github.com/Ruiii08/Simon-Says'">
+                            Github</button>
+                    </div>
+                </div>
+                <div class="det-container pro_2 ">
+                    <div class="article_contain">
+                        <img src="./images/project2ex.png" alt="Tic-Tac-Toe game site" class="projectImg">
+                    </div>
+                    <h2 class="ach_h2 project_h2">Project Two</h2>
+                    <p>Play Tic-Tac-Toe with cool sound effects.</p>
+                    <div>
+                        <button class="btn c1" onclick="location.href='https://github.com/Ruiii08/tic-tac-toe'">
+                            Github</button>
+                    </div>
+                </div>
+                <div class="det-container pro_3">
+                    <div class="article_contain">
+                        <img src="./images/project3.png" alt="Weather App" class="projectImg">
+                    </div>
+                    <h2 class="ach_h2 project_h2">Project Three</h2>
+                    <p>Know the weather of any city in the world with just a click.</p>
+                    <div>
+                        <button class="btn c2" onclick="location.href='https://github.com/Ruiii08/weather-app'">
+                            Github</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="icon arrow" src="./images/arrow.png" alt="arrows to next section"
+            onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <h1 class="sec_Head"><img class="section_icons" src="./images/contacts-removebg-preview.png"
+                alt="Social media icons"><span style="color: #a5c2ac;">Contact </span>Me</h1>
+        <div class="contact_container">
+            <div class="contact_info">
+                <img src="./images/email.png" alt="gmail icon" class="mail art_img">
+                <p><a href="mailto:riyasharmaa282@gmail.com">riyasharmaa282@gmail.com</a></p>
+            </div>
+            <div class="contact_info">
+                <img src="./images/linkedin.png" alt="linkedin icon" class="art_img">
+                <p><a href="https://www.linkedin.com/in/riya-sharma-123b03261/">linkedin</a></p>
+            </div>
+        </div>
+        <footer>
+            <p>Copyright © 2024 Riya Sharma. All Rights Reserved</p>
+        </footer>
+    </section>
+
     <script src="index.js"></script>
 </body>
+
 </html>
