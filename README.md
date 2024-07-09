@@ -15,4 +15,6 @@ The website is a responsive personal protfolio with various sections. It showcas
 <img width="959" alt="image" src="https://github.com/Ruiii08/CodSoft/assets/145280655/0f109969-afde-4c38-98be-1242daf7525a">
 <img width="959" alt="image" src="https://github.com/Ruiii08/CodSoft/assets/145280655/9046ca81-48e9-4264-9b0b-c389a03a89ea">
 <img width="959" alt="image" src="https://github.com/Ruiii08/CodSoft/assets/145280655/55255311-0204-48ac-91c8-1915c746a2be">
-
+<h2>Project 3 - Landing Page</h2>
+This is a landing page of a shoe store with animations and a beautiful slideshow of different shoes.
+<img width="952" alt="image" src="https://github.com/Ruiii08/CodSoft/assets/145280655/6d1d9dbc-5022-4927-a282-f5e6430814d8">
