@@ -72,3 +72,24 @@ ScrollReveal().reveal(".print", {
     duration: 1000,
     delay: 3500,
 });
+window.addEventListener("load", function(){
+    setTimeout(
+        function open(event){
+            document.querySelector(".popup").style.display="flex";
+        },
+        9000
+    )
+});
+document.querySelector("#close").addEventListener("click", function(){
+    document.querySelector(".popup").style.display = "none";
+    document.body.classList.remove("active-popup");
+});
+document.querySelector(".submit").addEventListener("click",function(){
+    document.body.classList.add("active-popup");
+    document.querySelector(".popup").style.display = "none";
+    document.querySelector(".after-popup").style.display = "block";
+});
+document.querySelector("#closed").addEventListener("click", function(){
+    document.querySelector(".after-popup").style.display = "none";
+    document.body.classList.remove("active-popup");
+});
