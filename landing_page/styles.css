@@ -259,3 +259,113 @@ color: whitesmoke;
     right: 1%;
     transform: rotate(+90deg);
 }
+/* POPUP */
+.popup{
+    background-color: #ead9fd;
+    width: 650px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 51%;
+    top:55%;
+    border-radius: 8px;
+    color: #240c2b;
+    display: none;
+    padding: 10px 0px;
+}
+.popup img{
+    margin-right: 10px;
+    width:90%;
+    height: 100%;
+}
+.butt{
+    position: relative;
+    top:90%;
+    right: -95%;
+}
+#close{
+    color: var(--text-dark);
+    display: block;
+    border: none;
+    font-size: 40px;
+    outline: none;
+    background-color: transparent;
+}
+#close:hover{
+    cursor: pointer;
+    font-size: 45px;
+    font-weight: bolder;
+}
+.submit{
+    margin: 10px 10px;
+    padding: 5px;
+    margin-bottom: 1px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    color: var(--text-dark);
+    background-color: var(--primary-color);
+}
+.submit:hover{
+    cursor: pointer;
+    background-color: #240c2b;
+    color: whitesmoke;
+}
+.imp{
+    border-radius: 0;
+    border: 2px solid var(--text-dark);
+    padding: 5px;
+}
+.popup p{
+    margin: 10px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.h1{
+    margin: 10px;
+}
+/* extras */
+body.active-popup{
+    overflow: hidden;
+}
+body.active-popup .main{
+    filter: blur(5px);
+    background: rgba(0, 0, 0, 0.0685);
+    transition: filter 0ms ease-in-out 0ms;
+}
+body.active-popup .after-popup{
+    top:50%;
+    opacity: 1;
+    margin-top: 0px;
+    transition: top 0ms ease-in-out 0ms, opacity 300ms ease-in-out, margin-top 300ms ease-in-out;
+}
+.main{
+    transition: filter 0ms ease-in-out 300ms;
+}
+.after-popup{
+    position: absolute;
+    top:-100%;
+    margin-top: 0px;
+    transition: top 0ms ease-in-out 0ms, opacity 300ms ease-in-out, margin-top 300ms ease-in-out;
+    left:30%;
+    width: 400px;
+    margin: 10px;
+    padding: 10px;
+    background-image:url(assets/Animation.gif);
+    display: none;
+    color: var(--text-dark);
+}
+.after-popup h1{
+    padding: 10px;
+}
+#closed{
+    color: var(--text-dark);
+    display: block;
+    border: none;
+    font-size: 40px;
+    outline: none;
+    background-color: transparent;
+}
